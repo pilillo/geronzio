@@ -1,4 +1,6 @@
-ARG VERSION=3.12.4
+# https://gitlab.alpinelinux.org/alpine/aports/-/issues/10977
+ARG VERSION=3.13
 FROM alpine:${VERSION}
 
-RUN apk add --no-cache krb5
+RUN apk update && apk add --no-cache krb5 kstart
+
