@@ -60,7 +60,7 @@ Usage: kinit [-V] [-l lifetime] [-s start_time]
 
 For long lasting deployments that need to periodically renew the ticket, you can use the k5start utility, for instance:
 
-`k5start -f keytab.file -u user@REALM -v -k 60 -x`
+`k5start -f keytab.file -u user@REALM -v -K 60 -x`
 
 Below the full help:
 
